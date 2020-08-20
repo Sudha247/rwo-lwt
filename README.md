@@ -24,7 +24,7 @@ The latest version of this document is available at https://github.com/dkim/rwo-
 
 ```ocaml
 # #require "lwt.unix";;
-# #require "lwt.ppx";;
+# #require "lwt_ppx";;
 # let file_contents filename =
     Lwt_io.with_file ~mode:Lwt_io.input filename
       (fun channel -> Lwt_io.read channel);;
